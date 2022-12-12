@@ -1,11 +1,8 @@
 FROM python:3.9
 
-COPY . /usr/api/
+COPY . /app
+WORKDIR /app
 
-EXPOSE 9000
+RUN pip install Flask
 
-WORKDIR /usr/api/
-
-RUN pip install -r Requirements.txt
-
-CMD python main.py
+CMD ["python", "app.py"]
