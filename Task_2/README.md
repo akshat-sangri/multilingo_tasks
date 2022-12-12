@@ -16,7 +16,7 @@ dataset.
 ### Local deployment
 - Create a Virtual conda environment: ```conda create -n multilingo_env_2 python=3.9```
 - Activate the conda environment: ```conda activate multilingo_env_2```
-- Installing the required packages: ```pip install -r Requirements.txt```
+- Installing the required packages: ```pip install -r requirements.txt```
 - Run the file: ``` python app.py```
 ### Docker deployment
 - Build a Docker image: ```docker build -t multilingo_api .```

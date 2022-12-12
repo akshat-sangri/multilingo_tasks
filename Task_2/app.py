@@ -1,6 +1,5 @@
 from flask import Flask, jsonify
 import pandas as pd
-from http import HTTPStatus
 
 app = Flask(__name__)
 
@@ -14,10 +13,8 @@ def get_status():
 def get_translations():
     # Select 10 random translation pairs from the dataset
     ten_sentence = df.sample(10).to_dict('examples')
-
     source, target = ten_sentence
     return jsonify({"source": source, "target": target})
-
 
 if __name__ == '__main__':
     app.run()
