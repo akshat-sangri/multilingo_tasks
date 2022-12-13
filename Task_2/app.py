@@ -3,12 +3,11 @@ import pandas as pd
 
 app = Flask(__name__)
 
+# Load the translation dataset from a file
+df = pd.read_excel("data/cleaned_translation-data.xlsx")
 @app.route("/api/v1/status", methods=['GET'])
 def get_status():
     return jsonify({"status": "OK"})
-
-# Load the translation dataset from a file
-df = pd.read_excel("data/cleaned_translation-data.xlsx")
 
 @app.route("/api/v1/sentences", methods=['GET'])
 def get_translations():

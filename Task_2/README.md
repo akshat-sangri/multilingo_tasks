@@ -20,7 +20,7 @@ dataset.
 - Run the file: ``` python app.py```
 ### Docker deployment
 - Build a Docker image: ```docker build -t multilingo_api .```
-- Run the container: ```docker run -d -p 8080:8080 multilingo_api```
+- Run the container: ```docker run -p 8080:8080 multilingo_api```
 ## Endpoints
     1. GET /api/v1/status
     
