@@ -20,7 +20,7 @@ dataset.
 - Run the file: ``` python app.py```
 ### Docker deployment
 - Build a Docker image: ```docker build -t multilingo_api .```
-- Run the container: ```docker run -d -p 9000:9000 multilingo_api```
+- Run the container: ```docker run -d -p 8080:8080 multilingo_api```
 ## Endpoints
     1. GET /api/v1/status
     
@@ -32,4 +32,4 @@ dataset.
     
 	    - returns appropriate status code
         
-        - response: jsonify({"source": source, "target": target}), status
+        - response: jsonify(ten_sentence)

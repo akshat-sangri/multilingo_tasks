@@ -1,7 +1,10 @@
 FROM python:3.9
 
-COPY . /app
-WORKDIR /app
+COPY . /api
+
+EXPOSE 8080
+
+WORKDIR /api
 
 RUN pip install -r requirements.txt
 
